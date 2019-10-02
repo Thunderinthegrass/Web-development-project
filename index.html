@@ -1,45 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header class="menu-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-2">
-                    <img src="img/logo.png" alt="My Logo" class="logo">
-                </div>
-                <div class="col-xl-8 ml-auto align-self-center">
-                    <nav>
-                        <ul class="menu d-flex justify-content-end">
-                            <li class="menu__item"><a href="#">Home</a></li>
-                            <li class="menu__item"><a href="#">About</a></li>
-                            <li class="menu__item"><a href="#">Servicing</a></li>
-                            <li class="menu__item"><a href="#">Portfolio</a></li>
-                            <li class="menu__item"><a href="#">Blog</a></li>
-                            <li class="menu__item"><a href="#">Contact us</a></li>
-                            <li class="menu__item"><i class="fas fa-search"></i></li>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__inner">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="My Logo">
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Servicing</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#"><i class="fas fa-search"></i></a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom__inner">
+                    <div class="header-bottom__title">
+                        Web development project
+                    </div>
+                    <div class="header-bottom__text">
+                        Very suitable to support all web development projects
+                    </div>
+                    <button class="header-btn">
+                        our services
+                    </button>
+                    <button class="header-btn">
+                        hire is now
+                    </button>
+                    <span><i class="fas fa-angle-down"></i></span>
+                </div>
+            </div>
+        </div>
     </header>
-    <script src="https://kit.fontawesome.com/f5975c85cc.js" crossorigin="anonymous"></script>
+    <div class="about">
+        <div class="container">
+            <div class="about__title">
+                About Us
+            </div>
+            <div class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </div>
+            <div class="about__items">
+                <div class="about__item">
+                    <img src="img/about_1.png" alt="">
+                    <div class="about__item_title">
+                        Awesome Icons
+                    </div>
+                    <div class="about__item_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img src="img/about_2.png" alt="">
+                    <div class="about__item_title">
+                        One Page
+                    </div>
+                    <div class="about__item_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img src="img/about_3.png" alt="">
+                    <div class="about__item_title">
+                        Fully Responsive
+                    </div>
+                    <div class="about__item_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 </body>
+
 </html>
