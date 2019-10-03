@@ -11,7 +11,10 @@
 
 body {
     font-family: Open Sans;
+    font-size: 15px;
     color: #212121;
+    letter-spacing: 0.5px;
+    line-height: 22px;
 }
 
 a {
@@ -75,7 +78,8 @@ ul, li {
     color: #fff;
     letter-spacing: 1.5px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 60px;
 }
 
 .header-bottom__text {
@@ -118,20 +122,18 @@ ul, li {
     padding: 120px 0;
 }
 
-.about__title {
+.about__title,
+.services__title {
     font-size: 30px;
     letter-spacing: 0.5px;
     line-height: 22px;
     font-weight: bold;
 }
 
-.about__text {
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    font-weight: 500;
+.about__text,
+.services__text {
     padding: 0 280px;
-    padding: 25px 280px 120px;
+    padding: 25px 280px 110px;
 }
 
 .about__items {
@@ -145,8 +147,80 @@ ul, li {
 
 .about__item_title {
     padding: 30px 0 20px 0;
+    font-weight: 500;
 }
 
 .about__item_text {
     padding: 0 70px;
+}
+
+.services {
+    background: #e4fdf9;
+    text-align: center;
+    padding: 170px 0 120px;
+}
+
+.services__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.services__item {
+    width: 370px;
+    background: #fff;
+    margin: 15px;
+    padding: 55px 46px 50px;
+    position: relative;
+}
+
+.services__item:hover {
+    background: #00897b;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.services__item-image {
+    width: 56px;
+    height: 62px;
+    margin: 0 auto;
+    background-image: url(../img/services.png);
+}
+
+.services__item:hover .services__item-image {
+    background-image: url(../img/services_hover.png);
+}
+
+.services__item-title {
+    padding: 35px 0 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.services__item-text {
+    padding-bottom: 40px;
+}
+
+.services__item-btn {
+    width: 150px;
+    height: 55px;
+    border: 2px solid #212121;
+    background: transpareent;
+    margin: 0 auto;
+}
+
+.services__item:hover .services__item-btn {
+    border: 2px solid #fff;
+}
+
+.services__item-btn a {
+    color: #212121;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 52px;
+    font-weight: 500;
+}
+
+.services__item:hover .services__item-btn a {
+    color: #fff;
 }
