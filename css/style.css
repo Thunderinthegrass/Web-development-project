@@ -123,17 +123,21 @@ ul, li {
 }
 
 .about__title,
-.services__title {
+.services__title,
+.works__title {
     font-size: 30px;
     letter-spacing: 0.5px;
     line-height: 22px;
     font-weight: bold;
+    text-align: center;
 }
 
 .about__text,
-.services__text {
+.services__text,
+.works__text {
     padding: 0 280px;
     padding: 25px 280px 110px;
+    text-align: center;
 }
 
 .about__items {
@@ -160,16 +164,18 @@ ul, li {
     padding: 170px 0 120px;
 }
 
-.services__items {
+.services__items,
+.works__items {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 -15px;
 }
 
 .services__item {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
+    margin: 15px 0;
     background: #fff;
-    margin: 15px;
     padding: 55px 46px 50px;
     position: relative;
 }
@@ -223,4 +229,80 @@ ul, li {
 
 .services__item:hover .services__item-btn a {
     color: #fff;
+}
+
+.works {
+    padding: 125px 0 140px;
+}
+
+.works__btn-inner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+}
+
+.works__btn,
+.works__btn-bottom {
+    color: #212121;
+    display: inline-block;
+    margin: 0 10px;
+    border: 2px solid #00897b;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 16px;
+}
+
+.works__btn:hover,
+.works__btn-bottom:hover {
+    color: #fff;
+    background: #00897b;
+    transition: 0.3s;
+}
+
+.works__item {
+    max-width: 370px;
+    width: 100%;
+    height: 370px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.works__item_descr-title {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    text-decoration: none;
+    background-color: rgba(0,0,0,.4);
+    padding-top: 145px;
+    text-align: center;
+    color: #fff;font-size: 20px;
+    font-weight: 500;
+    opacity: 0;
+    transition: .4s;
+    transform: scale(0) rotate(800deg);
+}
+
+.works__item:hover .works__item_descr-title {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+.works__item_descr-text {
+    margin: 0;
+    font-size: 15px;
+}
+
+.works__btn-bottom-wrapper {
+    text-align: center;
+    padding: 95px;
+}
+
+.works__btn-bottom {
+    line-height: 70px;
+    padding: 0 65px;
 }
