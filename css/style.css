@@ -62,7 +62,7 @@ ul, li {
 .header-bottom {
     text-align: center;
     padding-top: 180px;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 0 auto;
     min-height: 655px;
     background-image: url(../img/header_bg.png);
@@ -90,11 +90,12 @@ ul, li {
 }
 
 .header-bottom span {
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    margin-top: 70px;
     color: #fff;
     font-size: 30px;
-    position: absolute;
-    right: 693px;
-    bottom: 74px;
     cursor: pointer;
 }
 
@@ -125,7 +126,8 @@ ul, li {
 .about__title,
 .services__title,
 .works__title,
-.pricing__title {
+.pricing__title,
+.team__title {
     font-size: 30px;
     letter-spacing: 0.5px;
     line-height: 22px;
@@ -136,7 +138,8 @@ ul, li {
 .about__text,
 .services__text,
 .works__text,
-.pricing__text {
+.pricing__text,
+.team__text {
     padding: 0 280px;
     padding: 25px 280px 110px;
     text-align: center;
@@ -341,9 +344,8 @@ ul, li {
     content: "";
     position: absolute;
     height: 30px;
-    background: #000;
     border-left: 370px solid #3949ab;
-    border-bottom: 30px solid #f0f1f1;
+    border-bottom: 30px solid #fff;
     top: 150px;
     left: 0;
 }
@@ -391,5 +393,90 @@ ul, li {
     text-transform: uppercase;
     text-align: center;
     line-height: 60px;
+}
+
+.team {
+    padding: 120px 0 266px;
+}
+
+.team__members {
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+}
+
+.team__member {
+    text-align: center;
+}
+
+.team__member-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 40px 0 10px;
+}
+
+.team__member-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 35px;
+}
+
+.team__member-icon {
+    font-size: 30px;
+    color: #00897b;
+    background-color: #f0f1f1;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+}
+
+.team__member-icon:hover {
+    color: #fff;
+    background-color: #3949ab;
+    transition: 0.4s;
+}
+
+.member__btn {
+    width: 15px;
+    height: 15px;
+    padding-left: 9px;
+    border-radius: 50%;
+    background-color: #00897b;
+    border: none;
+    outline: none;
+}
+
+.member__btn:active {
+    background-color: #3949ab;
+}
+
+.slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 125px;
+}
+
+.slick-dots li {
+    margin-left: 5px;
+}
+
+.slick-dots li button {
+    border: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #3949ab;
+    color: #3949ab;
+    content: none;
+    outline: none;
+}
+
+.slick-dots li button:active,
+.slick-dots li button:focus {
+    background: #00897b;
+    color: #00897b;
 }
   
