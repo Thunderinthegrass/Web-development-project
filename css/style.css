@@ -2,6 +2,9 @@
 
 * {
     box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
 }
 .container {
     max-width: 1200px;
@@ -20,6 +23,7 @@ body {
 a {
     text-decoration: none;
     display: inline-block;
+    color: #212121;
 }
 
 ul, li {
@@ -127,7 +131,8 @@ ul, li {
 .services__title,
 .works__title,
 .pricing__title,
-.team__title {
+.team__title,
+.blog__title {
     font-size: 30px;
     letter-spacing: 0.5px;
     line-height: 22px;
@@ -139,7 +144,8 @@ ul, li {
 .services__text,
 .works__text,
 .pricing__text,
-.team__text {
+.team__text,
+.blog__text {
     padding: 0 280px;
     padding: 25px 280px 110px;
     text-align: center;
@@ -248,7 +254,8 @@ ul, li {
 }
 
 .works__btn,
-.works__btn-bottom {
+.works__btn-bottom,
+.blog__btn {
     color: #212121;
     display: inline-block;
     margin: 0 10px;
@@ -261,7 +268,8 @@ ul, li {
 
 .works__btn:hover,
 .works__btn-bottom:hover,
-.pricing__btn:hover {
+.pricing__btn:hover,
+.blog__btn:hover {
     color: #fff;
     background: #00897b;
     transition: 0.3s;
@@ -310,7 +318,8 @@ ul, li {
     padding-top: 95px;
 }
 
-.works__btn-bottom {
+.works__btn-bottom,
+.blog__btn {
     line-height: 70px;
     padding: 0 65px;
 }
@@ -395,14 +404,21 @@ ul, li {
     line-height: 60px;
 }
 
+.pricing__btn:hover {
+    box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.35);
+}
+
+.pricing__btn:active {
+    box-shadow: none;
+}
+
 .team {
-    padding: 120px 0 266px;
+    padding: 120px 0 125px;
 }
 
 .team__members {
     display: flex;
     justify-content: space-between;
-    outline: none;
 }
 
 .team__member {
@@ -445,7 +461,6 @@ ul, li {
     border-radius: 50%;
     background-color: #00897b;
     border: none;
-    outline: none;
 }
 
 .member__btn:active {
@@ -478,5 +493,58 @@ ul, li {
 .slick-dots li button:focus {
     background: #00897b;
     color: #00897b;
+}
+
+.blog {
+    background-color: #e4fdf9;
+    text-align: center;
+    padding: 125px 0;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__img,
+.blog__content {
+    max-width: 570px;
+    width: 100%;
+    min-height: 400px;
+}
+
+.blog__content {
+    text-align: left;
+    padding: 60px 120px 0 0;
+}
+
+.blog a {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.blog a:hover {
+    color: #fff;
+}
+
+.blog__date-category {
+    display: flex;
+    justify-content: left;
+}
+
+.blog__date,
+.blog__category {
+    padding: 25px 35px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.fa-calendar-alt,
+.fa-file {
+    padding-right: 12px;
+}
+
+.blog__btn {
+    margin-top: 120px;
 }
   
