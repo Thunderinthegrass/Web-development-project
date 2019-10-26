@@ -6,10 +6,16 @@
     margin: 0;
     padding: 0;
 }
+
+.white {
+    color: #fff;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    text-align: center;
 }
 
 body {
@@ -132,7 +138,8 @@ ul, li {
 .works__title,
 .pricing__title,
 .team__title,
-.blog__title {
+.blog__title,
+.contact-us__title {
     font-size: 30px;
     letter-spacing: 0.5px;
     line-height: 22px;
@@ -145,7 +152,8 @@ ul, li {
 .works__text,
 .pricing__text,
 .team__text,
-.blog__text {
+.blog__text,
+.contact-us__text {
     padding: 0 280px;
     padding: 25px 280px 110px;
     text-align: center;
@@ -546,5 +554,39 @@ article {
 
 .blog__btn {
     margin-top: 120px;
+}
+
+.contact-us{
+    padding: 125px 0 110px;
+    background-image: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+}
+
+.contact-us__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us__address,
+.contact-us__phone,
+.contact-us__mail  {
+    max-width: 390px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-us__address-icon,
+.contact-us__phone-icon,
+.contact-us__mail-icon {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: #3949ab;
+    margin: 0 auto;
+    font-size: 65px;
+    line-height: 105px;
+    color: #fff;
 }
   
