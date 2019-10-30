@@ -657,4 +657,57 @@ textarea {
     text-align: center;
     padding: 21px 0;
 }
+
+.header__btn-menu {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.header__btn-menu span,
+.header__btn-menu span::before, 
+.header__btn-menu span::after { 
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background-color: #212121;
+    font-size: 0;
+    left: 0;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.header__btn-menu span::before,
+.header__btn-menu span::after {
+    content: "";
+    display: block;
+    transition: 0.2s;
+}
+
+ .header__btn-menu span::before {
+    transform: translateY(16px);
+}
+
+.header__btn-menu span::after {
+    transform: translateY(-16px);
+}
+
+.header__btn-menu_active span {
+    height: 0;
+}
+
+.header__btn-menu_active span::before {
+    transform: rotate(45deg);
+}
+
+.header__btn-menu_active span::after {
+    transform: rotate(-45deg);
+}
+
+
+
+
   
