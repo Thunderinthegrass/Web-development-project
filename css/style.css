@@ -705,9 +705,4 @@ textarea {
 
 .header__btn-menu_active span::after {
     transform: rotate(-45deg);
-}
-
-
-
-
-  
+} 

@@ -1,4 +1,4 @@
-@media (max-width: 1180px) {
+@media (max-width: 1200px) {
   .about__text,
 .services__text,
 .works__text,
@@ -11,6 +11,16 @@
 .about__item_text {
   padding: 0 30px;
 }
+.services__items {
+  justify-content: center;
+}
+.services__item {
+  margin: 15px;
+}
+.services,
+  .works {
+    padding: 60px 0;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -28,7 +38,6 @@
   .menu ul {
     display: none;
     position: absolute;
-    /* left: 0; */
     right: 0;
     margin-top: 70px;
     z-index: 50;
@@ -41,7 +50,7 @@
     display: block;
     background: #212121;
     color: #fff;
-    padding: 5px 0;
+    padding: 15px 0;
     width: 250px;
   }
   .header__btn-menu {
@@ -64,6 +73,10 @@
   .about__item_text {
     padding: 0 15px;
   }
+  .about__text,
+  .services__text {
+    padding: 25px 50px 50px;
+  }
 }
 
 @media (max-width: 815px) {
@@ -78,15 +91,18 @@
   .about {
     padding: 60px 0;
   }
-  .about__text {
-    padding: 25px 50px 50px;
-  }
   .about__items {
     flex-wrap: wrap;
     justify-content: center;
   }
   .about__item_text {
     padding: 0 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  .services__item {
+    margin: 15px auto;
   }
 }
 
@@ -100,7 +116,8 @@
   .header-bottom .angle-down {
     margin-top: 35px;
   }
-  .about__text {
+  .about__text,
+  .services__text  {
     padding: 25px 20px 50px;
   }
   .about__item_text {
@@ -111,7 +128,7 @@
   }
 }
 
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   .header-bottom {
     padding-top: 80px;
   }
@@ -126,13 +143,16 @@
     padding-top: 15px;
   }
   .about__item_text {
-    padding-bottom: 30px;
+    padding: 0 0 0 30px;
+  }
+  .services__item {
+    padding: 55px 30px 50px;
   }
 }
 
 @media (max-width: 375px) {
   .about__item_text {
-    padding: 0 15px 20px;
+    padding: 0 0 20px;
   }
   .about {
     padding: 40px 0 10px;
