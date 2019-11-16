@@ -5,24 +5,32 @@
 .pricing__text,
 .team__text,
 .blog__text,
-.contact-us__text {
+.contact-us__text,
+.pricing__text {
   padding: 25px 200px 110px;
 }
 .about__item_text {
   padding: 0 30px;
 }
 .services__items,
-.works__items {
+.works__items,
+.pricing__plans {
   justify-content: center;
 }
 .services__item,
-.works__item {
+.works__item,
+.pricing__plan {
   margin: 15px;
 }
 .services,
-  .works {
+.works,
+.pricing {
     padding: 60px 0;
   }
+.team__members {
+  display: flex;
+  justify-content: center;
+}
 }
 
 @media (max-width: 1020px) {
@@ -68,7 +76,7 @@
   .team__text,
   .blog__text,
   .contact-us__text {
-    padding: 25px 100px 110px;
+    padding: 25px 100px 95px;
   }
 }
 
@@ -78,7 +86,11 @@
   }
   .about__text,
   .services__text,
-  .works__text {
+  .works__text,
+  .pricing__text,
+  .team__text,
+  .blog__text,
+  .contact-us__text {
     padding: 25px 50px 50px;
   }
 }
@@ -123,8 +135,20 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .works__text {
+  .about__text,
+  .services__text,
+  .works__text,
+  .pricing__text,
+  .team__text,
+  .blog__text,
+  .contact-us__text {
     padding: 25px 15px 30px;
+  }
+  .team {
+    padding: 60px 0;
+  }
+  .slick-dots {
+    bottom: -56px;
   }
 }
 
@@ -138,10 +162,6 @@
   .header-bottom .angle-down {
     margin-top: 35px;
   }
-  .about__text,
-  .services__text {
-    padding: 25px 20px 50px;
-  }
   .about__item_text {
     padding: 0 15px;
   }
@@ -150,6 +170,9 @@
   }
   .works__btn-bottom-wrapper {
     padding-top: 60px;
+  }
+  .pricing__plan {
+    margin: 15px 0;
   }
 }
 
@@ -181,16 +204,29 @@
     width: 345px;
     height: 345px;
   }
-  .works__text {
-    padding: 20px 0 25px;
-  }
+  .works__text,
   .about__text,
-  .services__text {
-    padding-left: 0;
-    padding-right: 0;
+  .services__text,
+  .pricing__text,
+  .team__text {
+    padding: 20px 0 25px;
+    font-size: 14px;
   }
   .works__btn-bottom-wrapper {
     padding-top: 30px;
+  }
+  .pricing {
+    padding: 30px 0;
+  }
+  .pricing__list {
+    padding: 45px 80px;
+  }
+  .team__member img {
+    width: 345px;
+  }
+  .team__member-icons {
+    width: 290px;
+    padding: 0;
   }
 }
 
@@ -205,5 +241,11 @@
   .works__item img {
     width: 290px;
     height: 290px;
+  }
+  .pricing__list {
+    padding: 45px 50px;
+  }
+  .team__member img {
+    width: 290px;
   }
 }
